@@ -6,7 +6,7 @@ const MongoTrial = () => {
 
   
     const getAllTasks = async () => {
-      const apiUrl = "http://localhost:5001/api/tasks";
+      const apiUrl = "/api/tasks";
 
       try {
         const res = await fetch(apiUrl);
