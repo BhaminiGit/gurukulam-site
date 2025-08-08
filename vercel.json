@@ -1,0 +1,13 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/tasks",
+      "destination": "/server/app.js"
+    }
+  ],
+  "functions": {
+    "server/*.js": {
+      "runtime": "nodejs22.0"
+    }
+  }
+}

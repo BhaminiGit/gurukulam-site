@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
-const MongoTest = () => {
+const MongoTrial = () => {
 
     const [tasks, setTasks] = useState([{name: "hi", info: "this is default info"}])
 
@@ -25,13 +25,13 @@ const MongoTest = () => {
     <div>
         <div>MongoTest</div>
         { tasks.map((task, index) => (
-           <p> { Object.values(task).join("  |  ") } <br/> {index} </p>
+           <p key={index}> { Object.values(task).join("  |  ") } <br/> {index} </p>
         )
         )}
 
-        <button onClick={() => getAllTasks}>Get All Tasks</button>
+        <button onClick={() => getAllTasks()}>Get All Tasks</button>
     </div>
   )
 }
 
-export default MongoTest
+export default MongoTrial
