@@ -1,0 +1,140 @@
+@import url('https:fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-darkblue: #150946;
+  --color-darkpurple: #7161EF;
+  --color-purple: #957FEF;
+  --color-mediumpurple: #B79CED;
+  --color-lightpurple: #DEC0F1;
+  --color-cream: #FFF1EA;
+
+  --font-belanosima: "Belanosima", 'sans-serif';
+
+}
+
+
+.heroPic {
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+
+  height: 92vh;
+  /* full viewport height */
+  width: 100%;
+
+  background:
+    linear-gradient(rgba(21, 9, 70, 0.55), rgba(21, 9, 70, 0.55)),
+    url("/assets/homepage/gurukulamHero.jpeg") no-repeat center center / cover;
+}
+
+.heroButtons:hover {
+  border-color: #7161EF;
+  border-width: 3px;
+  border-style: solid;
+  text-shadow: 0px 2px 6px rgba(21, 9, 70, 0.4);
+}
+
+.heroButtons {
+  border-color: #DEC0F1;
+  border-width: 3px;
+  border-style: solid;
+}
+
+.loginButton:hover{
+
+  border: 3px solid #150946 ;
+  background-color: white;
+  font-weight: bold;
+
+}
+
+
+.multiBoxContainer {
+  position: relative;
+  height: 145px;
+  width: 480px;
+}
+
+.box_top {
+  position: absolute;
+  color: #150946;
+
+  background-color: #DEC0F1;
+  height: 90px;
+  top: 15px;
+  left: 15px;
+}
+
+.box_under_high {
+  position: absolute;
+  background-color: #957FEF;
+  height: 90px;
+  top: 0px;
+
+}
+
+.box_under_low {
+  position: absolute;
+
+  background-color: #7161EF;
+  top: 30px;
+  height: 90px;
+  left: 30px;
+
+
+}
+
+.whatWeOffer li {
+  @apply bg-darkpurple h-90 w-70 flex rounded-[80px] items-end pb-6 text-3xl text-cream text-center font-belanosima font-semibold justify-center
+}
+
+
+.whatWeOffer {
+  @apply flex gap-15 justify-center
+}
+
+.whatParentsSay li {
+  @apply w-80 h-90 font-belanosima font-normal bg-lightpurple rounded-[80px] border-5 border-darkblue text-darkblue text-3xl leading-snug flex items-center justify-center text-center p-10
+}
+
+.whatParentsSay {
+  @apply flex justify-center gap-20
+}
+
+.registerFormField {
+  @apply border-darkpurple border-1
+}
+
+.templePicWithPurpleBg {
+  height: 565px;
+
+  background:
+    linear-gradient(rgba(183, 156, 237, 0.53), rgba(183, 156, 237, 0.53)),
+    url("/assets/homepage/ahtTemplePic.png") no-repeat center center / cover,
+    linear-gradient(rgba(183, 156, 237, 0.92), rgba(183, 156, 237, 0.592));
+
+
+}
+
+.galleryPics li {
+  @apply w-90 h-auto border-4 border-mediumpurple
+}
+.resourcesBG {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+
+  height: 92vh;
+  /* full viewport height */
+  width: 100%;
+
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/assets/homepage/gurukulamHero.jpeg") no-repeat center center / cover;
+}
